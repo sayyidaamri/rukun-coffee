@@ -1,4 +1,4 @@
-# RUKUN — klon tampilan & perilaku tuku.coffee/id
+# RUKUN — situs statis Toko Kopi RUKUN
 
 Situs statis HTML/CSS/JS native (tanpa server, tanpa framework runtime). Brand pengganti: **Toko Kopi RUKUN**.
 
@@ -25,7 +25,7 @@ Artikel surat kabar saat ini: `kopi-dingin-pagi-dan-sore`, `pagi-bersama-tetangg
 
 ## Mengubah konten
 Folder ini hanya berisi keluaran statis. Sumber generator (`src/`: `data.mjs`, `art.mjs`, `build.mjs`,
-`input.css`), `docs/` (riset & perbandingan) dan `clone-kit/` (skrip verifikasi Playwright) **tidak ada di
+`input.css`) dan `docs/` **tidak ada di
 sini**; kalau masih punya, simpan di folder induk. Tanpa generator, edit langsung file HTML
 (`id/` dan `en/` harus diubah berpasangan) dan `assets/css/style.css`.
 
@@ -53,16 +53,10 @@ Kalau generator dipakai kembali (`cd src && npm install && npm run build`), `bui
 - Surat kabar: tab sticky lompat ke section, polaroid aktif/nonaktif; artikel dengan slider + "Kabar lainnya".
 - Semua modal: overlay, Esc, focus trap, kembali fokus; `prefers-reduced-motion` dihormati.
 
-## Yang berbeda dari referensi (dan alasannya)
-- **Sumber riset**: tuku.coffee memblokir browser otomatis (Vercel Security Checkpoint), jadi riset memakai
-  arsip Wayback Machine. CSS/JS 2026 tidak terarsip → layout direkonstruksi dari class HTML 2026 + token CSS 2025.
-- **Konten dinamis** referensi (hero, daftar toko, galeri, timeline, isi artikel) dimuat dari API dan tidak
-  terarsip; strukturnya diambil dari skeleton & kode komponen, isinya ditulis baru.
-- **Font**: "Tuku Handwriting" & "TUKU SubHead" proprietary → diganti Caveat Brush (+size-adjust) & DM Mono.
-  DM Mono body sama persis.
-- **Ilustrasi**: semua ilustrasi referensi (hero toko, poster, gambar surat kabar) adalah karya berhak cipta →
-  diganti SVG buatan sendiri dan foto Unsplash dengan treatment "tinta" (grayscale + multiply).
-- Teks seluruhnya baru (nada & panjang setara). Halaman legal hanya Bahasa Indonesia, seperti referensi.
+## Catatan teknis
+- **Font**: Caveat Brush (+size-adjust) untuk judul tulisan tangan dan DM Mono untuk teks isi.
+- **Ilustrasi**: SVG buatan sendiri dan foto Unsplash dengan treatment "tinta" (grayscale + multiply).
+- **Konten**: seluruh teks ditulis baru. Halaman legal hanya tersedia dalam Bahasa Indonesia.
 
 ## Placeholder yang perlu kamu ganti
 Nama brand/logo RUKUN, PT Karya Rukun Sejahtera, Sekawan Group & daftar perusahaannya, nomor WA
