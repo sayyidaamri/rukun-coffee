@@ -1,3 +1,5 @@
+![Preview](docs/preview/homepage.gif)
+
 # RUKUN — situs statis Toko Kopi RUKUN
 
 Situs statis HTML/CSS/JS native (tanpa server, tanpa framework runtime). Brand pengganti: **Toko Kopi RUKUN**.
